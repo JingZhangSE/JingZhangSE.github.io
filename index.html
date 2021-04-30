@@ -1,12 +1,139 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jing Zhang</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/stylesheets/stylev2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <a href="#">J.</a>
+      <ul>
+        <li><button>About</button></li>
+        <li><button>Resume</button></li>
+        <li><button>Contact</button></li>
+        <li>
+          <button><i class="fab fa-linkedin-in"></i></button>
+        </li>
+      </ul>
+    </nav>
+    
+
+
+<section id="section1">
+    <div class="body">
+        <div class="homepage">
+            <div class="text">
+                Jing is a Sweden-based UI/UX Designer who subscribes to the belief that Design should be empathetic,
+                solve problems, and create WOW moments for its users :)
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="clickable" onclick="location.href = '#section2'">
+            <div class="text">
+                <div class="title">Check more about Jing's work</div>
+            </div>
+            <div class="arrow"><i class="fas fa-angle-down" style="font-size:1em; color:#1F243E"></i></div>
+        </div>
+    </div>
+</section>
+<section id="section2">
+    <div class="body">
+        <div class="text">
+            <div>
+                <div class="title" style="color: white;font-size: 4rem;">Pure Leaf Love</div>
+                <hr style="background-color: #3F66D1; opacity:0.4; width:95%; margin-left:0; height:2px;">
+            </div>
+            <div class="description" style="color: white;">Redesigned of the ‘Pure Leaf Love’ application and website
+                that helped customers transport them into a fictitious natural sensation to enjoy better nights &
+                brighter days.</div>
+        </div>
+        <div class="image ppl"><img src="./images/ppl.png" alt="PPL"></div>
+    </div>
+</section>
+<section id="section3">
+    <div class="body">
+        <div class="image ppl">
+            <video controls style="height:50vh; margin-right:50px; outline:none">
+                <source src="/video/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="text">
+            <div>
+                <div class="title" style="font-size: 4rem;">JU App</div>
+                <hr style="opacity:0.4; width:95%; height:2px;">
+            </div>
+            <div class="description" style="margin-right: 3.75vw;">Redesigned the JUApp, Jönköping University’s
+                application is used by over 12,000 students, and staff across the four schools.</div>
+        </div>
+    </div>
+</section>
+<section id="section4">
+    <div class="body">
+        <div class="text">
+            <div>
+                <div class="title" style="color:#383838;font-size: 4rem;">Plant Care</div>
+                <hr style="background-color: #FCEE84; opacity:0.4; width:95%; margin-left:0; height:2px;">
+            </div>
+            <div class="description" style="color: #383838;">Plant care App accompany you to take care of your little
+                happy trees and allow you to experience the joy of growing up with the world – from AI recognizing
+                category and disease of plants, through to track recovery situation.</div>
+        </div>
+        <div class="image ppl" style="margin-right: 3.75vw;"><img src="./images/pic3.png" alt="PPL"></div>
+    </div>
+</section>
+<section id="section5">
+    <div class="body">
+        <div class="image grp"><img src="./images/Group1.png" alt="PPL"></div>
+        <div class="text grptxt">
+            <div>
+                <div class="title" style="font-size: 4rem;">Aristotle</div>
+                <hr style="opacity:0.4; width:95%; height:2px; background-color:#FFC7A3;">
+            </div>
+            <div class="description" style="padding-right: 0;">Aristotle is a meeting application for businesses to help
+                make meetings better. Using AI, the app is able to automatically transcribe what is said during a
+                meeting. The notes can then be edited and saved.</div>
+        </div>
+    </div>
+</section>
+</div>
+    <!-- <div id="overlay">
+    <div class="txt"> Please use it in Portrait mode</div>
+  </div> -->
+  </body>
+  <!-- <script>
+  window.onload = function () {
+    if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && window.orientation != 0) {
+      document.getElementById("container").style.display = 'none'
+      document.getElementById("overlay").style.visibility = 'visible'
+    }
+  };
+
+  window.addEventListener('orientationchange', function () {
+    if (window.orientation != 0) {
+      document.getElementById("container").style.display = 'none'
+      document.getElementById("overlay").style.visibility = 'visible'
+    }
+    else {
+      document.getElementById("container").style.display = 'block'
+      document.getElementById("overlay").style.visibility = 'hidden'
+    }
+  });
+</script> -->
 </html>

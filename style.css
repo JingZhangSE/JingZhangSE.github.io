@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman";
+  }
+  
+  /* START -- NavigationBar */
+  nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: transparent;
+    justify-content: space-between;
+    width: 85vw;
+    height: 77px;
+    margin-left: auto;
+    margin-right: auto;
+    mix-blend-mode: multiply;
+    z-index: 2;
+  }
+  
+  nav button {
+    padding: 1px 6px 1px 6px;
+    margin: 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 3.2rem;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    letter-spacing: 0px;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    align-items: center;
+  }
+  
+  nav ul button {
+    border: 2px solid #aa6069;
+    border-color: rgba(235, 64, 52, 0.4);
+    border-radius: 33px;
+  
+    width: 150px;
+    height: 50px;
+    font-size: 1.3rem;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+    letter-spacing: 0px;
+    background-color: transparent;
+    color: #383838;
+    opacity: 1;
+    outline: none;
+    cursor: pointer;
+  }
+  nav ul li {
+    margin-right: 2.5vw;
+  }
+  nav ul li:last-of-type {
+    margin-right: 0;
+  }
+  /* END -- NavigationBar */
+  
+  /* START -- SECTION */
+  
+  section {
+    /* padding: 77px 12vw 77px 12vw; */
+    height: 100vh;
+  }
+  
+  section .profile img {
+    height: calc(100vh - 100px);
+    margin-right: -2.5vw;
+    bottom: 0;
+  }
+  
+  section .ppl img {
+    margin-right: 3.75vw;
+    max-width: calc(55vw);
+    max-height: 80vh;
+  }
+  
+  section .grp img {
+    margin-right: -3.75vw;
+    height: calc(75vh);
+  }
+  
+  section .body .grptxt {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    padding: 75px;
+    background-color: #e98543;
+    margin-right: 7vw;
+    color: white;
+  }
+  
+  section .body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 77px 2.5vw 0 12vw;
+    height: 100vh;
+  }
+  
+  section .body > div {
+    display: flex;
+    align-items: center;
+  }
+  
+  section .footer {
+    background-color: white;
+    border-radius: 7px 7px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 130px;
+    width: 50vw;
+    padding: 20px 4vw 20px 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  section .body .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  section .body .text .title {
+    font-size: 5rem;
+  }
+  
+  section .body .text hr {
+    width: 90%;
+    margin-left: 0;
+    background-color: #aa6069a3;
+    opacity: 0.4;
+    height: 3px;
+    border: none;
+  }
+  
+  section .body .text .description {
+    font: normal normal normal 30px/48px Times New Roman;
+    font-size: 1.3rem;
+    padding-right: 50px;
+    margin-bottom: 30px;
+  }
+  
+  section .footer .text .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #383838;
+    margin-bottom: 10px;
+  }
+  
+  section .footer .text .subtitle {
+    margin-left: 5px;
+    opacity: 0.4;
+  }
+  
+  section:nth-child(1) {
+    background-color: #e5e5e5;
+  }
+  
+  section:nth-child(2) {
+    background-color: #144772;
+  }
+  
+  section:nth-child(3) {
+    background-color: #e5e5e5;
+  }
+  
+  section:nth-child(4) {
+    background-color: #ffce00;
+  }
+  
+  section:nth-child(5) {
+    background-color: #e5e5e5;
+  }
+  
+  /* END -- SECTION */
+  
+  @media screen and (max-width: 1200px) {
+  
+    video {
+      max-width: 100%;
+      height: auto !important;
+      margin-bottom: 10vh;
+    }
+  
+    section .body {
+      flex-wrap: wrap;
+    }
+    section .body .text {
+      width: 100%;
+    }
+    section .body .image {
+      max-width: 100%;
+      max-height: 40vh;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  
+    section .profile img {
+      max-width: 100%;
+      max-height: 40vh;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  
+    section .body {
+      padding: 77px 12vw 0 12vw;
+    }
+  
+    section .body .grptxt {
+      padding: 10px;
+      margin: 0;
+      max-width: 100%;
+      max-height: 50%;
+    }
+  
+    .image {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  
+    section .ppl img {
+      max-width: 100%;
+    }
+    section .body .image {
+      max-width: 100%;
+    }
+    nav {
+      margin-left: 0;
+      width: 100vw;
+      left: 0;
+      transform: none;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    section .body .text .title {
+      font-size: 3rem !important;
+    }
+    section .footer {
+      display: none;
+    }
+  
+    section .body .text .description {
+      padding-right: 0;
+      margin-right: 0;
+      line-height: normal;
+      margin-right: 15vw;
+    }
+  
+    section .ppl {
+      margin-right: 0 !important;
+    }
+  
+    section .ppl img {
+      max-width: 100%;
+    }
+    nav {
+      margin-left: 0;
+      width: 100vw;
+      left: 0;
+      transform: none;
+      height: auto;
+    }
+    section .body {
+      padding: 77px 12vw 0 12vw;
+    }
+  
+    section .body .image {
+      max-width: 100%;
+    }
+  
+    section .body .grptxt {
+      padding: 10px;
+      margin: 0;
+      max-width: 100%;
+      max-height: 50%;
+    }
+  
+    section .body .text .description {
+      margin-right: 0;
+    }
+  
+    section {
+      overflow: hidden;
+    }
+  
+    .image {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  
+  }
+  
+  @media screen and (max-width: 540px) {
+    
+    section .body .text .description {
+      font-size: 1rem !important;
+    }
+    
+    section .body .text .title {
+      font-size: 2rem !important;
+    }
+  
+    nav button {
+      font-size: 2.5rem;
+    }
+    nav {
+      width: 100vw;
+      left: 0;
+      margin-left: 0;
+      transform: none;
+      height: auto;
+    }
+  }
+  
+  #overlay {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#e5e5e5;
+    visibility: hidden;
+  }
+  
+  #overlay .txt {
+    font-size: 3em;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
